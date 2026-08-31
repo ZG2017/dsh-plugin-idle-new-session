@@ -1,4 +1,4 @@
-// Client half of @zg2017/dsh-plugin-idle-new-session.
+// Client half of @gz2016/dsh-plugin-idle-new-session.
 //
 // Behavior: track the last time the app was "opened" (a page load, or the
 // tab/PWA becoming visible again after being backgrounded) in localStorage.
@@ -16,7 +16,7 @@
 // workspaces was last active rather than needing to know which one that is
 // itself.
 window.__ModuleLoader__.load({
-  id: '@zg2017/dsh-plugin-idle-new-session',
+  id: '@gz2016/dsh-plugin-idle-new-session',
   factory: function (require) {
     var module = { exports: {} }
     var exports = module.exports

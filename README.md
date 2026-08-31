@@ -13,7 +13,7 @@ A pure client-side patch (`src/client.js`, no build step). The host half is a no
 ## Install
 
 ```sh
-dsh plugin --profile web add @zg2017/dsh-plugin-idle-new-session
+dsh plugin --profile web add @gz2016/dsh-plugin-idle-new-session
 ```
 
 No configuration - the 30-minute threshold is fixed today.

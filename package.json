@@ -1,5 +1,5 @@
 {
-  "name": "@zg2017/dsh-plugin-idle-new-session",
+  "name": "@gz2016/dsh-plugin-idle-new-session",
   "description": "Starts a fresh session automatically when the app is opened (page load or tab/PWA foregrounded) 30+ minutes after the last time it was opened - avoids dropping the user back into a stale, possibly unrelated conversation after a real gap.",
   "version": "0.1.0",
   "license": "MIT",
