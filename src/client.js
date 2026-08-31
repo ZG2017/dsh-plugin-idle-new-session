@@ -12,9 +12,8 @@
 // "New Session" button makes (packages/client/ui-sidebar/src/client/
 // SidebarRoot.tsx's onClick={() => { startSession() }}) - called with no
 // argument, it falls back to the current/most-recently-used workspace on
-// its own, so this correctly stays within whichever of the two users'
-// workspaces was last active rather than needing to know which one that is
-// itself.
+// its own, so this correctly stays within whichever workspace was last
+// active without this plugin needing to know which one that is itself.
 window.__ModuleLoader__.load({
   id: '@gz2016/dsh-plugin-idle-new-session',
   factory: function (require) {
