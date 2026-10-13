@@ -1,7 +1,7 @@
 {
   "name": "@gz2016/dsh-plugin-idle-new-session",
   "description": "Starts a fresh session automatically when the app is opened (page load or tab/PWA foregrounded) 30+ minutes after the last time it was opened - avoids dropping the user back into a stale, possibly unrelated conversation after a real gap.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "author": "ZG2017",
   "homepage": "https://github.com/ZG2017/dsh-plugin-idle-new-session#readme",
@@ -18,15 +18,19 @@
     "./package.json": "./package.json"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
       "inject": [
-        "@deepseek-ai/dsh-client-runtime"
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-api-workspace-controller"
       ]
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "^4.0.1"
+    "@deepseek-ai/cordis": "^4.0.5-alpha.1"
   }
 }
